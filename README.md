@@ -1,1 +1,1 @@
-[![Netlify Status](https://padh-le.netlify.app/)
+https://padh-le.netlify.app/
