@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Previous Year Question Answers CI</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="bg-dark text-white py-1">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container d-flex align-items-center">
+          <a class="navbar-brand" href="home.html">Home</a>
+          <button
+            class="btn btn-dark btn-sm dark-mode-toggle"
+            id="darkModeToggle"
+          >
+            <i class="fas fa-moon"></i> Dark Mode
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container my-4">
+        <center>
+          <strong
+            ><p class="text-center bordered-heading">
+              PYQ Paper CI (Set : 5)
+            </p></strong
+          >
+        </center>
+        <!-- Added Sets dropdown here -->
+        <div class="my-4">
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="setsDropdown"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Sets
+            </button>
+            <div class="dropdown-menu" aria-labelledby="setsDropdown">
+              <a class="dropdown-item" href="index.html" id="set1">Set 1</a>
+              <a class="dropdown-item" href="set2.html" id="set2">Set 2</a>
+              <a class="dropdown-item" href="set3.html" id="set3">Set 3</a>
+              <a class="dropdown-item" href="set4.html" id="set4">Set 4</a>
+              <a class="dropdown-item" href="set5.html" id="set5">Set 5</a>
+              <a class="dropdown-item" href="set6.html" id="set6">Set 6</a>
+              <a class="dropdown-item" href="set7.html" id="set7">Set 7</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="container mt-5" id="questionContainer">
+      <!-- Questions and answers will be dynamically added here -->
+    </div>
+
+    <footer class="bg-dark text-white py-3 my-5 footer">
+      <div class="container">
+        <p class="text-center my-0">
+          Copyright &copy; 2024. All Rights Reserved by Lakhi.
+        </p>
+      </div>
+    </footer>
+
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+      var sections = [
+        {
+          name: "Section 1",
+          questionsAndAnswers: [
+            {
+              question:
+                "<h6>1. Write short notes on:</h6><h6>(a) People’s movement in a Democracy<br>(b) Women’s Rights<br>(c) Education as a right</h6>",
+              answer: `
+        
+        
+        <p><strong>(a) People’s Movement in a Democracy:</strong></p>
+        <p>People's movements play a crucial role in shaping democratic societies by advocating for social justice, equality, and accountability. These movements are often driven by grassroots mobilization and collective action to address grievances and bring about societal change.</p>
+        <p>Key features of people's movements include:</p>
+        <ul>
+            <li><strong>Democratic Participation:</strong> People's movements thrive on active citizen participation and engagement. They empower individuals and communities to voice their concerns, mobilize support, and hold governments and institutions accountable for their actions.</li>
+            <li><strong>Social Justice:</strong> People's movements strive to address systemic injustices and inequalities in society. They advocate for the rights of marginalized and oppressed groups, challenge discriminatory practices, and demand equitable distribution of resources and opportunities.</li>
+            <li><strong>Collective Action:</strong> People's movements harness the power of collective action to amplify voices and effect change. Through protests, demonstrations, petitions, and other forms of activism, they mobilize public opinion and pressure policymakers to address pressing issues.</li>
+            <li><strong>Impact:</strong> People's movements have historically played a significant role in driving social and political transformation. They have contributed to the abolition of unjust laws, the expansion of civil liberties, the advancement of human rights, and the establishment of democratic institutions.</li>
+        </ul>
+        <p>Overall, people's movements are integral to the functioning of a vibrant democracy, serving as a catalyst for positive change and ensuring that governments remain responsive and accountable to the needs and aspirations of the people.</p>
+        
+        <p><strong>(b) Women’s Rights:</strong></p>
+        <p>Women's rights encompass the fundamental rights and freedoms that women are entitled to in society, including political, economic, social, and reproductive rights. Despite significant progress in recent decades, women continue to face systemic discrimination, violence, and inequality in various spheres of life.</p>
+        <p>Key aspects of women's rights include:</p>
+        <ul>
+            <li><strong>Gender Equality:</strong> Women's rights advocate for gender equality and the elimination of discrimination based on sex or gender. This includes equal access to education, employment, healthcare, and political participation, as well as the promotion of women's leadership and representation in decision-making processes.</li>
+            <li><strong>Violence Prevention:</strong> Women's rights movements work to prevent and address gender-based violence, including domestic violence, sexual assault, trafficking, and harmful practices such as child marriage and female genital mutilation. They advocate for legal reforms, support services for survivors, and cultural shifts to challenge attitudes that condone violence against women.</li>
+            <li><strong>Reproductive Rights:</strong> Women's rights encompass the right to make autonomous decisions about their bodies, including access to reproductive healthcare, contraception, and safe abortion services. This includes advocating for comprehensive sexual and reproductive health education, family planning services, and the elimination of barriers to reproductive rights.</li>
+            <li><strong>Economic Empowerment:</strong> Women's rights movements strive to address economic inequalities and barriers to women's economic participation and empowerment. This includes advocating for equal pay for equal work, access to land and property rights, microfinance initiatives, and support for women entrepreneurs and workers in the informal sector.</li>
+        </ul>
+        <p>Ensuring women's rights is essential not only for promoting gender equality but also for achieving sustainable development, social justice, and peace. Empowering women and girls benefits entire communities and societies, contributing to healthier, more prosperous, and more equitable societies.</p>
+        
+        <p><strong>(c) Education as a Right:</strong></p>
+        <p>Education is widely recognized as a fundamental human right and a key enabler of individual empowerment, economic development, and social progress. Access to quality education is essential for realizing other human rights and achieving sustainable development goals.</p>
+        <p>Key aspects of education as a right include:</p>
+        <ul>
+            <li><strong>Universal Access:</strong> Education as a right entails ensuring that all individuals, regardless of gender, ethnicity, socio-economic status, or disability, have equal opportunities to access and complete quality education. This includes removing barriers to enrollment, such as school fees, discrimination, and cultural norms that prioritize boys' education over girls'.</li>
+            <li><strong>Quality Education:</strong> Education as a right encompasses not only access to schools but also the provision of quality education that equips individuals with the knowledge, skills, and competencies needed to thrive in a rapidly changing world. This includes trained teachers, relevant curriculum, adequate resources, safe learning environments, and supportive school policies.</li>
+            <li><strong>Inclusive Education:</strong> Education as a right promotes inclusive education systems that accommodate the diverse learning needs and abilities of all learners, including those with disabilities, marginalized communities, and children affected by conflict, poverty, or displacement. Inclusive education ensures that no one is left behind and that every child receives the support they need to learn and succeed.</li>
+            <li><strong>Lifelong Learning:</strong> Education as a right extends beyond formal schooling to encompass lifelong learning opportunities for individuals of all ages. This includes adult education, vocational training, skills development programs, and non-formal education initiatives that enable individuals to acquire new knowledge and skills throughout their lives.</li>
+        </ul>
+        <p>Investing in education as a right yields multiple dividends for individuals, communities, and societies. It enhances human capital, fosters social cohesion, promotes democratic values, reduces poverty and inequality, and drives sustainable development. By prioritizing education as a right, governments can unlock the full potential of their populations and build a brighter future for all.</p>
+    `,
+            },
+            {
+              question:
+                "<h6>2. Offer a critical commentary on the impact that liberalisation and privatisation have made on various sectors that play a role in shaping childhood in India.</h6>",
+              answer: `
+             <h3> 2. Offer a critical commentary on the impact that liberalisation and privatisation have made on various sectors that play a role in shaping childhood in India.</h3>
+        
+        <p><strong>Introduction:</strong></p>
+        <p>The liberalization and privatization policies initiated in India in the early 1990s have significantly transformed various sectors that play a crucial role in shaping childhood experiences. While these policies aimed to stimulate economic growth and development, their impact on sectors such as education, healthcare, media, and consumerism has been a subject of debate. This commentary critically examines the implications of liberalization and privatization on childhood in India.</p>
+        
+        <p><strong>Impact on Education:</strong></p>
+        <p>The liberalization of the education sector has led to the proliferation of private schools and educational institutions, offering varying levels of quality and affordability. While this has increased access to education, especially in urban areas, it has also widened disparities in access and quality between urban and rural, and affluent and marginalized communities. Privatization has commodified education, transforming it into a market-driven service where profit often takes precedence over pedagogical values. Additionally, the emphasis on rote learning and competition in privatized education systems can undermine holistic child development and creativity.</p>
+        
+        <p><strong>Impact on Healthcare:</strong></p>
+        <p>Privatization in the healthcare sector has led to the emergence of private hospitals and healthcare facilities, catering primarily to the affluent sections of society. While these facilities offer advanced medical technologies and services, they are often inaccessible to the majority of the population, especially those living in rural and remote areas. This exacerbates healthcare inequalities and undermines the right to health for children from marginalized communities. Moreover, the profit-driven nature of privatized healthcare can prioritize revenue generation over equitable healthcare delivery, further marginalizing vulnerable populations.</p>
+        
+        <p><strong>Impact on Media:</strong></p>
+        <p>Liberalization of the media sector has resulted in the proliferation of television channels, online platforms, and digital content targeting children. While this has expanded children's access to diverse media content, it has also raised concerns about the quality and influence of media on childhood development. Commercialization and advertising in children's media often promote consumerism, materialism, and unhealthy lifestyles, influencing children's preferences, behaviors, and values. Moreover, the lack of regulation and oversight in the media sector can expose children to inappropriate content, including violence, sexualization, and misinformation.</p>
+        
+        <p><strong>Impact on Consumerism:</strong></p>
+        <p>Liberalization has contributed to the growth of consumerism in India, with increased access to a wide range of goods and services. While consumerism can offer choices and opportunities for children, it also fosters materialism, peer pressure, and status-seeking behaviors. Advertising and marketing tactics target children as consumers, influencing their preferences and shaping their identity based on consumption patterns. This can lead to social inequalities and exclusion, as children from disadvantaged backgrounds may face barriers to accessing consumer goods and experiences.</p>
+        
+        <p><strong>Conclusion:</strong></p>
+        <p>The impact of liberalization and privatization on various sectors that shape childhood experiences in India is complex and multifaceted. While these policies have expanded access to certain services and opportunities, they have also deepened inequalities, commodified essential services, and prioritized profit over public welfare. Addressing the adverse effects of liberalization and privatization on childhood requires a comprehensive approach that prioritizes equity, social justice, and the well-being of children. Governments, civil society, and stakeholders must work together to ensure that policies and practices promote inclusive and child-centered development in India.</p>
+    `,
+            },
+            {
+              question:
+                "<h6>3. How is nationalism a complex and restricting construct? Elucidate by taking the context of India.</h6>",
+              answer: `
+        <p><strong>Answer to question 3:</strong></p>
+        
+        <p><strong>Introduction:</strong></p>
+        <p>Nationalism, as a concept, is multifaceted and can have both unifying and divisive consequences within a society. In the context of India, nationalism has been instrumental in the struggle for independence and the formation of a unified national identity. However, nationalism can also be a complex and restricting construct, with implications for social cohesion, diversity, and individual rights.</p>
+        
+        <p><strong>Complexity of Nationalism:</strong></p>
+        <p>Nationalism in India is multifaceted, encompassing diverse interpretations and expressions based on factors such as religion, language, culture, and regional identity. While nationalism can foster a sense of pride, unity, and belonging among citizens, it can also be exclusionary, privileging certain groups over others and marginalizing minorities.</p>
+        
+        <p><strong>Restrictive Nature of Nationalism:</strong></p>
+        <p>Nationalism, when taken to extremes, can be restrictive and oppressive, stifling dissent, diversity, and individual freedoms. In India, nationalist ideologies have sometimes been used to justify authoritarianism, censorship, and the suppression of dissenting voices. This can undermine democratic principles, pluralism, and the rights of marginalized communities.</p>
+        
+        <p><strong>Religious and Ethnic Nationalism:</strong></p>
+        <p>In India, nationalism often intersects with religious and ethnic identities, leading to tensions and conflicts. Religious nationalism, in particular, can exacerbate communalism and sectarianism, polarizing communities along religious lines and undermining secularism, a foundational principle of the Indian Constitution. Ethnic nationalism, likewise, can fuel separatist movements and ethnic conflicts, challenging the unity and integrity of the nation.</p>
+        
+        <p><strong>Challenges to Diversity and Pluralism:</strong></p>
+        <p>One of the key challenges posed by nationalism in India is its impact on diversity and pluralism. While India is home to a rich tapestry of cultures, languages, and traditions, nationalist ideologies that prioritize a homogenized national identity can marginalize minority cultures and languages. This can erode cultural diversity, linguistic rights, and the autonomy of marginalized communities.</p>
+        
+        <p><strong>Conclusion:</strong></p>
+        <p>Nationalism, in the context of India, is a complex and nuanced construct with both positive and negative implications. While nationalism can foster unity, pride, and collective identity, it can also be exclusionary, oppressive, and divisive. Recognizing the complexities of nationalism is essential for promoting social cohesion, diversity, and democratic values in India. Embracing inclusive and pluralistic forms of nationalism that celebrate diversity and uphold individual rights is crucial for building a more just, equitable, and harmonious society.</p>
+    `,
+            },
+            {
+              question:
+                "<h6>4. Reflect on the nature of debates about federalism in the light of contemporary Indian models of education or choices made by women led to their personal life.</h6>",
+              answer: `
+        <p><strong>Answer to question 4:</strong></p>
+        
+        <p><strong>Introduction:</strong></p>
+        <p>The nature of debates about federalism in India intersects with various aspects of governance and societal choices, including models of education and women's autonomy in personal life. Federalism, as a system of governance, involves the division of powers between central and state governments, with implications for policy formulation, implementation, and decision-making.</p>
+        
+        <p><strong>Federalism and Education:</strong></p>
+        <p>Debates about federalism in the context of education in India revolve around issues of decentralization, autonomy, and resource allocation. While education is primarily a state subject under the Indian Constitution, the central government plays a significant role in setting policy frameworks, standards, and funding mechanisms. This has led to debates about the balance of power between the center and states in education governance.</p>
+        <p>Contemporary Indian models of education reflect a diverse range of approaches, including centralized systems such as the national curriculum framework and standardized testing, as well as decentralized models that empower states and local communities to design and implement educational policies tailored to their specific needs and contexts. Debates about federalism in education often center on questions of equity, access, and quality, with stakeholders advocating for greater decentralization, community participation, and flexibility in education governance.</p>
+        
+        <p><strong>Federalism and Women's Autonomy:</strong></p>
+        <p>Women's autonomy in personal life intersects with debates about federalism in the context of gender rights, family law, and social policy. While personal laws governing marriage, divorce, inheritance, and property rights fall within the purview of religious and customary practices, the central government has the authority to enact laws and policies that promote gender equality and protect women's rights.</p>
+        <p>Choices made by women in their personal lives, including decisions related to marriage, education, career, and family planning, are influenced by cultural norms, religious practices, and legal frameworks shaped by federalism. Debates about federalism in the context of women's autonomy often revolve around questions of uniformity versus diversity in personal laws, the role of the state in protecting women's rights, and the need for gender-sensitive legislation and social policies.</p>
+        
+        <p><strong>Conclusion:</strong></p>
+        <p>The nature of debates about federalism in India is shaped by complex dynamics related to governance, identity, and rights. Whether in the realm of education or women's autonomy, federalism entails a delicate balance between centralization and decentralization, uniformity and diversity, and rights and responsibilities. Recognizing the diverse perspectives and interests at play in these debates is essential for promoting inclusive governance, social justice, and democratic values in India.</p>
+    `,
+            },
+            {
+              question:
+                "<h6>5. Describe and critically reflect on the vision and challenges to children’s right to free and compulsory education during the pandemic-led massive closure of schools and other related institutions.</h6>",
+              answer: `
+        <p><strong>Answer to question 5:</strong></p>
+        
+        <p><strong>Introduction:</strong></p>
+        <p>The COVID-19 pandemic has posed unprecedented challenges to children's right to free and compulsory education, disrupting learning environments and exacerbating existing educational inequalities. While the vision of free and compulsory education aims to ensure universal access to quality education for all children, the pandemic-induced closure of schools and related institutions has exposed systemic gaps and vulnerabilities in education systems worldwide.</p>
+        
+        <p><strong>Vision of Free and Compulsory Education:</strong></p>
+        <p>The vision of free and compulsory education is rooted in the principles of equity, inclusivity, and social justice. It recognizes education as a fundamental human right and a key enabler of individual empowerment, social mobility, and economic development. The goal is to provide every child, regardless of socio-economic background, gender, or ability, with access to quality education that fosters holistic development, critical thinking, and citizenship skills.</p>
+        
+        <p><strong>Challenges During the Pandemic:</strong></p>
+        <p>The pandemic-led closure of schools and other educational institutions has presented numerous challenges to the realization of children's right to education:</p>
+        <ul>
+            <li><strong>Disruption of Learning:</strong> School closures have disrupted learning continuity, leading to academic regression, learning loss, and increased dropout rates, particularly among marginalized and vulnerable groups.</li>
+            <li><strong>Digital Divide:</strong> The shift to online and remote learning has widened the digital divide, with many children lacking access to devices, internet connectivity, and digital literacy skills needed for remote education.</li>
+            <li><strong>Social Isolation:</strong> School closures have deprived children of social interaction, peer support, and emotional well-being, exacerbating feelings of isolation, anxiety, and mental health issues.</li>
+            <li><strong>Loss of Nutrition and Support Services:</strong> For many children, schools serve as essential hubs for nutrition, health services, and social support. The closure of schools has deprived children of access to nutritious meals, healthcare, and other support services.</li>
+            <li><strong>Economic Hardships:</strong> The economic impact of the pandemic has exacerbated poverty and inequality, making it difficult for families to afford educational expenses, such as tuition fees, textbooks, and learning materials.</li>
+        </ul>
+        
+        <p><strong>Critical Reflection:</strong></p>
+        <p>The pandemic has highlighted the need for innovative approaches to ensure continuity of education and mitigate the impact of school closures:</p>
+        <ul>
+            <li><strong>Equitable Access:</strong> Efforts must be made to bridge the digital divide and ensure equitable access to remote learning resources, particularly for marginalized and remote communities.</li>
+            <li><strong>Flexible Learning Models:</strong> Education systems need to adapt and innovate by implementing flexible learning models that combine online, offline, and hybrid approaches to accommodate diverse learning needs and contexts.</li>
+            <li><strong>Support for Vulnerable Children:</strong> Special attention should be given to supporting vulnerable children, including those from low-income families, rural areas, migrant communities, and children with disabilities, through targeted interventions and support services.</li>
+            <li><strong>Community Engagement:</strong> Engaging parents, communities, and civil society organizations in education planning and decision-making can strengthen resilience, foster community ownership, and promote collaborative efforts to address educational challenges.</li>
+            <li><strong>Policy Reforms:</strong> Governments must prioritize education funding, policy reforms, and investments in teacher training, infrastructure, and technology to build resilient and inclusive education systems that can withstand future crises.</li>
+        </ul>
+        
+        <p><strong>Conclusion:</strong></p>
+        <p>The pandemic has underscored the importance of safeguarding children's right to education in times of crisis. While the challenges are immense, the pandemic also presents an opportunity to reimagine education systems, address systemic inequalities, and build back better. By prioritizing equity, inclusion, and resilience, we can work towards ensuring that every child has the opportunity to fulfill their potential and access a quality education, even in the face of adversity.</p>
+    `,
+            },
+            {
+              question:
+                "<h6>6. What are the challenges that the constitutional value of secularism faces in contemporary India? What is the role of education in it?</h6>",
+              answer: `
+        <p><strong>Answer to question 6:</strong></p>
+        
+        <p><strong>Introduction:</strong></p>
+        <p>Secularism, as enshrined in the Indian Constitution, is a fundamental principle that upholds the neutrality of the state in matters of religion and ensures equal treatment of all religions. However, in contemporary India, secularism faces numerous challenges stemming from socio-political dynamics, communal tensions, and ideological shifts. Education plays a crucial role in shaping attitudes, values, and perceptions related to secularism, both as a potential solution to its challenges and as a source of perpetuation.</p>
+        
+        <p><strong>Challenges to Secularism:</strong></p>
+        <p>Several challenges confront the constitutional value of secularism in contemporary India:</p>
+        <ul>
+            <li><strong>Communal Polarization:</strong> Divisive politics and communal rhetoric have fueled tensions between religious communities, undermining the spirit of secularism and promoting sectarianism and intolerance.</li>
+            <li><strong>Majoritarianism:</strong> The rise of majoritarian ideologies and religious nationalism has marginalized minority communities, eroding the principles of equality and secularism enshrined in the Constitution.</li>
+            <li><strong>Religious Extremism:</strong> Extremist ideologies and religious fundamentalism pose a threat to secularism by promoting exclusivist narratives and undermining pluralism and religious diversity.</li>
+            <li><strong>Legal Challenges:</strong> Legal interpretations and judgments that favor one religious community over others or infringe upon secular principles pose challenges to the implementation of secularism in practice.</li>
+            <li><strong>Social Divisions:</strong> Socio-economic disparities, caste hierarchies, and regional tensions intersect with religious identities, exacerbating social divisions and hindering the realization of a truly secular society.</li>
+        </ul>
+        
+        <p><strong>Role of Education:</strong></p>
+        <p>Education plays a pivotal role in addressing the challenges faced by secularism in contemporary India:</p>
+        <ul>
+            <li><strong>Promoting Pluralism:</strong> Education can foster pluralism and interfaith understanding by promoting knowledge about diverse religious traditions, cultures, and perspectives.</li>
+            <li><strong>Instilling Values:</strong> Schools and educational institutions can instill values of tolerance, respect, and empathy towards people of different religions and beliefs, nurturing a culture of secularism and inclusivity.</li>
+            <li><strong>Critical Thinking:</strong> Education should encourage critical thinking and rational inquiry, empowering individuals to question stereotypes, challenge prejudices, and reject extremist ideologies that undermine secularism.</li>
+            <li><strong>Curriculum Reform:</strong> Reforms in the education curriculum can ensure that secular values are integrated across subjects, teaching students about the importance of secularism in fostering social cohesion and democratic principles.</li>
+            <li><strong>Teacher Training:</strong> Training programs for teachers should emphasize the importance of secularism and equip educators with the skills and resources needed to address sensitive religious issues in the classroom.</li>
+        </ul>
+        
+        <p><strong>Conclusion:</strong></p>
+        <p>Secularism in contemporary India faces significant challenges, but education has the potential to be a powerful tool in promoting secular values and countering divisive forces. By fostering pluralism, instilling values of tolerance, encouraging critical thinking, and reforming the education curriculum, we can build a society that upholds the principles of secularism and respects the rights and freedoms of all its citizens.</p>
+    `,
+            },
+            {
+              question:
+                "<h6>7. Discuss how reservation policy compensates for the social disadvantage and promotes the possibility of social justice and equality through education.</h6>",
+              answer: `
+        <p><strong>Answer to question 7:</strong></p>
+        
+        <p><strong>Introduction:</strong></p>
+        <p>The reservation policy, implemented in India to address historical injustices and social inequalities, plays a crucial role in promoting social justice and equality through education. By providing affirmative action in educational institutions and government employment, the reservation policy aims to compensate for social disadvantage, empower marginalized communities, and create opportunities for upward mobility.</p>
+        
+        <p><strong>Compensating for Social Disadvantage:</strong></p>
+        <p>The reservation policy compensates for social disadvantage by providing reserved seats and quotas for historically marginalized communities, including Scheduled Castes (SCs), Scheduled Tribes (STs), and Other Backward Classes (OBCs). These communities have faced systemic discrimination, oppression, and exclusion for centuries, resulting in socio-economic disparities and educational backwardness.</p>
+        
+        <p><strong>Promoting Social Justice:</strong></p>
+        <p>The reservation policy promotes social justice by ensuring equitable access to education and opportunities for historically marginalized groups. By reserving seats in educational institutions, including schools, colleges, and universities, the policy enables students from underprivileged backgrounds to access quality education and pursue higher studies.</p>
+        
+        <p><strong>Enhancing Equality:</strong></p>
+        <p>Reservation policy enhances equality by leveling the playing field and reducing disparities in educational attainment. By providing affirmative action in admissions and recruitment processes, the policy creates pathways for social mobility and empowers marginalized communities to compete on an equal footing with their more privileged counterparts.</p>
+        
+        <p><strong>Promoting Inclusive Development:</strong></p>
+        <p>By promoting inclusive development and empowering historically marginalized communities, the reservation policy contributes to the overall socio-economic progress of the nation. Education plays a pivotal role in breaking the cycle of poverty and exclusion, enabling individuals to realize their full potential and contribute to nation-building.</p>
+        
+        <p><strong>Addressing Criticisms:</strong></p>
+        <p>While the reservation policy has been instrumental in promoting social justice and equality through education, it has also faced criticisms and challenges. Critics argue that reservation based on caste perpetuates identity-based politics and undermines meritocracy. However, proponents argue that reservation is a temporary measure necessary to address historical injustices and create a more inclusive society.</p>
+        
+        <p><strong>Conclusion:</strong></p>
+        <p>The reservation policy in India plays a vital role in compensating for social disadvantage, promoting social justice, and enhancing equality through education. By providing affirmative action and opportunities for historically marginalized communities, the policy empowers individuals to break the cycle of poverty and discrimination, contributing to a more inclusive and equitable society.</p>
+    `,
+            },
+
+            // Add more question-answer pairs as needed
+          ],
+        },
+        // {
+        //   name: "Section 2",
+        //   questionsAndAnswers: [
+        //     {
+        //       question: "<h4>Question 3</h4>",
+        //       answer: "<p>Answer to question 3</p>",
+        //     },
+        //     {
+        //       question: "<h4>Question 4</h4>",
+        //       answer: "<p>Answer to question 4</p>",
+        //     },
+        //     // Add more question-answer pairs as needed
+        //   ],
+        // },
+      ];
+
+      function generateSectionsAndQuestions() {
+        var questionContainer = $("#questionContainer");
+        sections.forEach(function (section, sectionIndex) {
+          var sectionHTML = `<p><strong>${section.name}</p></strong>`;
+          section.questionsAndAnswers.forEach(function (item, questionIndex) {
+            var questionID = "question" + sectionIndex + "-" + questionIndex;
+            var answerID = "answer" + sectionIndex + "-" + questionIndex;
+            var card = `
+          <div class="card">
+            <div class="card-header" id="${questionID}">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#${answerID}" aria-expanded="false" aria-controls="${answerID}">
+                  ${item.question}
+                  <i class="fas fa-chevron-down float-right"></i>
+                </button>
+              </h5>
+            </div>
+            <div id="${answerID}" class="collapse" aria-labelledby="${questionID}" data-parent="#questionContainer">
+              <div class="card-body">
+                ${item.answer}
+              </div>
+            </div>
+          </div>`;
+            sectionHTML += card;
+          });
+          questionContainer.append(sectionHTML);
+        });
+      }
+
+      $(document).ready(function () {
+        generateSectionsAndQuestions();
+
+        // Collapse other cards when one is shown
+        $(".collapse").on("show.bs.collapse", function () {
+          $(".collapse.show").not(this).collapse("hide");
+        });
+
+        // Dark mode toggle
+        $("#darkModeToggle").click(function () {
+          var darkModeState = $("body").hasClass("dark-mode");
+          $("body").toggleClass("dark-mode");
+          $("header").toggleClass("dark-mode");
+          $("footer").toggleClass("dark-mode");
+          $(".card").toggleClass("dark-mode");
+          $(".dropdown-toggle").toggleClass("dark-mode"); // Apply dark mode to dropdown toggle button
+          $(".dropdown-menu").toggleClass("dark-mode"); // Apply dark mode to dropdown menu
+          if (!darkModeState) {
+            $(this)
+              .addClass("on")
+              .text("Light Mode")
+              .html('<i class="fas fa-sun"></i> Light Mode');
+            localStorage.setItem("darkMode", "on"); // Store dark mode state in local storage
+          } else {
+            $(this)
+              .removeClass("on")
+              .text("Dark Mode")
+              .html('<i class="fas fa-moon"></i> Dark Mode');
+            localStorage.setItem("darkMode", "off"); // Store dark mode state in local storage
+          }
+        });
+
+        // Retrieve dark mode state from local storage
+        var darkModeState = localStorage.getItem("darkMode");
+        if (darkModeState === "on") {
+          $(
+            "body, header, footer, .card, .dropdown-toggle, .dropdown-menu"
+          ).addClass("dark-mode");
+          $("#darkModeToggle")
+            .addClass("on")
+            .text("Light Mode")
+            .html('<i class="fas fa-sun"></i> Light Mode');
+        }
+
+        // Highlight selected set
+        $(".dropdown-item").click(function () {
+          $(".dropdown-item").removeClass("selected");
+          $(this).addClass("selected");
+        });
+      });
+    </script>
+  </body>
+</html>

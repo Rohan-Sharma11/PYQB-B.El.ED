@@ -1,0 +1,77 @@
+/* style.css */
+
+/* Normal Mode */
+.bordered-heading {
+  border: 2px solid #4caf50; /* Green border color */
+  border-radius: 10px; /* Rounded corners */
+  padding: 10px 20px; /* Padding inside the border */
+  text-align: center; /* Center-align text */
+  display: inline-block; /* Fit border to text size */
+  background-color: #f8f9fa; /* Light background color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  color: #000; /* Text color for light mode */
+}
+
+/* Dark Mode */
+body.dark-mode .bordered-heading {
+  background-color: #333; /* Dark background color */
+  color: #fff; /* Text color for dark mode */
+  border-color: #1a1a1a; /* Dark border color */
+}
+
+.card-header button {
+  text-align: left;
+  width: 100%;
+}
+
+/* Add your custom styles here */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode .card {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .navbar,
+.dark-mode .footer {
+  background-color: #1e1e1e;
+}
+
+.navbar-brand,
+.dark-mode-toggle {
+  margin-right: auto;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.dark-mode-toggle {
+  margin-right: 10px; /* Adjust margin for the dark mode toggle button */
+}
+
+.dropdown-toggle {
+  background-color: blue; /* Set background color for the dropdown toggle button */
+}
+
+.dropdown-toggle:hover {
+  background-color: blue; /* Set background color for the dropdown toggle button on hover */
+}
+
+.dark-mode .dropdown-item {
+  color: white; /* Change text color of dropdown items in dark mode */
+  /* Remove background color of dropdown items in dark mode */
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus {
+  background-color: #007bff; /* Set background color for the dropdown items on hover */
+  color: white; /* Set text color for the dropdown items on hover */
+}
+
+.selected {
+  background-color: #007bff;
+  color: #fff;
+}
