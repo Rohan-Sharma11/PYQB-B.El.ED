@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Previous Year Question Answers CI</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Custom CSS -->
+    <style>
+      .card-img-top {
+        height: 200px; /* Set your desired height */
+        object-fit: cover;
+      }
+      .bordered-heading {
+        border: 2px solid rgb(52, 58, 64); /* Adjust as needed rgb(56, 161, 30) */
+        padding: 10px;
+        display: inline-block;
+        margin: 0 20px; /* Added margin for both left and right sides */
+      }
+      .card {
+        border: 2px solid rgb(52, 58, 64); /* Same border as the heading */
+        margin: 0 20px; /* Added margin for both left and right sides */
+      }
+      .card-body {
+        text-align: center;
+      }
+      .card img {
+        width: 100%;
+        height: auto;
+      }
+      /* Dark mode styles */
+      .dark-mode .card {
+        background-color: rgb(32, 34, 37);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="bg-dark text-white py-1">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container d-flex align-items-center">
+          <a class="navbar-brand" href="index.html">Home</a>
+          <button
+            class="btn btn-dark btn-sm dark-mode-toggle"
+            id="darkModeToggle"
+          >
+            <i class="fas fa-moon"></i> Dark Mode
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container my-4">
+        <center>
+          <strong>
+            <p class="text-center bordered-heading">
+              Enhance Your Exam Readiness with Concise Notes.
+            </p>
+          </strong>
+        </center>
+
+        <!-- Subject cards -->
+        <div class="row justify-content-center my-5">
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="https://www.brainwonders.in/media/2022/05/2022-05-09-12-09-21Biology.png"
+                class="card-img-top"
+                alt="Subject 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Biology</h5>
+                <p class="card-text">Description for Subject 1.</p>
+                <a href="subject1.html" class="btn btn-primary">View Notes</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <img
+                src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/f38d802002043.5601163816f9e.jpg"
+                class="card-img-top"
+                alt="Subject 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Contemporary India</h5>
+                <p class="card-text">
+                  Access questions from previous years along with their
+                  corresponding answers.
+                </p>
+                <a href="set1.html" class="btn btn-primary">View Notes</a>
+              </div>
+            </div>
+          </div>
+          <!-- Add more subject cards as needed -->
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-dark text-white py-3 mt-4 footer">
+      <div class="container">
+        <p class="text-center my-0">
+          Copyright &copy; 2024. All Rights Reserved by Lakhi.
+        </p>
+      </div>
+    </footer>
+
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+      $(document).ready(function () {
+        // Dark mode toggle
+        $("#darkModeToggle").click(function () {
+          var darkModeState = $("body").hasClass("dark-mode");
+          $("body").toggleClass("dark-mode");
+          $("header").toggleClass("dark-mode");
+          $("footer").toggleClass("dark-mode");
+          $(".card").toggleClass("dark-mode");
+          $(".dropdown-toggle").toggleClass("dark-mode"); // Apply dark mode to dropdown toggle button
+          $(".dropdown-menu").toggleClass("dark-mode"); // Apply dark mode to dropdown menu
+          if (!darkModeState) {
+            $(this)
+              .addClass("on")
+              .text("Light Mode")
+              .html('<i class="fas fa-sun"></i> Light Mode');
+            localStorage.setItem("darkMode", "on"); // Store dark mode state in local storage
+          } else {
+            $(this)
+              .removeClass("on")
+              .text("Dark Mode")
+              .html('<i class="fas fa-moon"></i> Dark Mode');
+            localStorage.setItem("darkMode", "off"); // Store dark mode state in local storage
+          }
+        });
+
+        // Retrieve dark mode state from local storage
+        var darkModeState = localStorage.getItem("darkMode");
+        if (darkModeState === "on") {
+          $(
+            "body, header, footer, .card, .dropdown-toggle, .dropdown-menu"
+          ).addClass("dark-mode");
+          $("#darkModeToggle")
+            .addClass("on")
+            .text("Light Mode")
+            .html('<i class="fas fa-sun"></i> Light Mode');
+        }
+      });
+    </script>
+  </body>
+</html>
