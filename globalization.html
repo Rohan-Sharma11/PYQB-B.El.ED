@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Biology</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <!-- Font Awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="bg-dark text-white py-1">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container d-flex align-items-center">
+          <a class="navbar-brand" href="index.html">Home</a>
+          <button
+            class="btn btn-dark btn-sm dark-mode-toggle"
+            id="darkModeToggle"
+          >
+            <i class="fas fa-moon"></i> Dark Mode
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container my-4">
+        <center>
+          <strong
+            ><p class="text-center bordered-heading">Globalization</p></strong
+          >
+        </center>
+      </div>
+    </main>
+
+    <div class="container mt-5" id="questionContainer">
+      <!-- Questions and answers will be dynamically added here -->
+    </div>
+
+    <footer class="bg-dark text-white py-3 mt-4 footer">
+      <div class="container">
+        <p class="text-center my-0">
+          Copyright &copy; 2024. All Rights Reserved by Lakhi.
+        </p>
+      </div>
+    </footer>
+
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script>
+      var sections = [
+        {
+          name: "Main Headings",
+          questionsAndAnswers: [
+            {
+              question: "<h6>Meaning of Globalization?</h6>",
+              answer: `
+        <p><strong>Understanding Globalization: A Contemporary Perspective</strong></p>
+        <p><strong>Introduction</strong></p>
+        <p>Globalization can be simply understood as the increasing interconnectedness of the world. It is a continuous process rather than a final state, emphasizing the trend towards <strong>greater connectivity and interaction</strong> among various regions of the globe, rather than just the fact that they are connected.</p>
+        <p><strong>Components of Globalization</strong></p>
+        <p>Globalization encompasses the exchange of economic, social, cultural, political, and technological attributes between societies. This exchange occurs when different societies interact and influence each other. While such interactions have occurred throughout history, the term <strong>"globalization"</strong> is used to describe this ongoing process in the modern context.</p>
+    `,
+            },
+
+            {
+              question: "<h6>Definition of Globalization</h6>",
+              answer: `
+        <p>The contemporary process of globalization is commonly defined as the gradual removal of barriers to trade and investment between nations. This phase of globalization began in the late 20th century. Its primary aim is to achieve economic efficiency by fostering competitiveness among nations, while also striving for broader goals of economic and social development.</p>
+        <p>Globalization impacts all aspects of human life, including:</p>
+        <ul>
+            <li><strong>Economic</strong>: Increased trade, investment, and market integration across countries.</li>
+            <li><strong>Social</strong>: Greater cultural exchange and interaction, influencing lifestyles, norms, and values.</li>
+            <li><strong>Cultural</strong>: The spread and mingling of different cultural practices and ideas.</li>
+            <li><strong>Political</strong>: Enhanced cooperation and policy-making at an international level, affecting national sovereignty.</li>
+            <li><strong>Environmental</strong>: Shared global challenges and collaborative efforts to address environmental issues.</li>
+        </ul>
+        <p>Antony Giddens says globalization is when people and places around the world become more connected. So, something happening far away can affect what's happening nearby, and vice versa.</p>
+        <p>David Henderson sees globalization as when markets worldwide work together closely. This means stuff like goods, services, workers, and money can move around freely across borders, making one big global market. He also thinks everyone, whether they're from another country or not, should be treated the same economically.</p>
+        <p><strong>Meghnad Desai's Definition:</strong><br>Meghnad Desai sees globalization as the increasing mutual dependence and integration of different economies worldwide. This means that economies are becoming more connected and reliant on each other.</p>
+        <p><strong>Richard O’Brian's Definition:</strong><br>Richard O’Brian describes globalization as a mix of international, multinational, offshore, and global activities. He believes it involves a general shift from local or national activities towards more global ones.</p>
+        <p><strong>Malcolm Waters' Definition:</strong><br>Malcolm Waters views globalization as a social process where the limitations imposed by geography on social and cultural arrangements diminish. He believes that people are becoming more aware of these diminishing limitations, leading to greater interconnectedness and a decrease in the significance of geographical boundaries.</p>
+        <p>According to him, the fast-paced globalization today includes:</p>
+        <ol>
+            <li><strong>Informatization</strong>: This refers to the increasing importance of information and communication technologies in the globalized world.</li>
+            <li><strong>Flexibilization</strong>: This involves changes in production systems towards more flexible methods of manufacturing and organizing work.</li>
+            <li><strong>Reconfiguration of States and Regionalization</strong>: This encompasses changes in the structure and role of states, as well as the growing significance of regional cooperation and integration.</li>
+        </ol>
+        <p>He sees globalization as both a process and an awareness:</p>
+        <ul>
+            <li><strong>As a Process</strong>: It's the growing interconnectedness of different parts of the world.</li>
+            <li><strong>As Awareness</strong>: It's the recognition of this increasing interconnectedness among people.</li>
+        </ul>
+    `,
+            },
+            {
+              question: "<h6>Different Dimensions of Globalization:</h6>",
+              answer: `
+        <p><strong>1. Economic Dimensions:</strong></p>
+        <p>Globalization affects economies in various ways:</p>
+        <ul>
+            <li><strong>Breaking Down National Economic Barriers:</strong> Countries are becoming more interconnected economically, with fewer restrictions on trade and investment.</li>
+            <li><strong>International Spread of Trade, Finance, and Production:</strong> Businesses operate across borders more freely, leading to global trade, financial transactions, and manufacturing.</li>
+            <li><strong>Growing Power of Transnational Corporations and International Financial Institutions:</strong> Big companies and global financial organizations have more influence on the world economy.</li>
+        </ul>
+        <p>Specific economic aspects of globalization include:</p>
+        <ul>
+            <li><strong>Liberalization and Privatization:</strong> Governments are opening up markets and selling state-owned businesses.</li>
+            <li><strong>Free Flow of Trade and Services:</strong> Trade and services move more freely between countries, thanks to organizations like the World Trade Organization (WTO).</li>
+            <li><strong>Foreign Direct Investment (FDI):</strong> Companies invest in other countries, leading to global financial markets and multinational corporations.</li>
+            <li><strong>Liberalization in Investment:</strong> Countries relax rules on foreign investment.</li>
+            <li><strong>Growth of Global Economy:</strong> The world economy expands and becomes more connected.</li>
+            <li><strong>Infrastructural Development:</strong> Infrastructure like roads and communication networks improve to support global trade.</li>
+            <li><strong>Development of Information and Communication Technologies (ICTs):</strong> Better technology like the internet helps people communicate and do business globally.</li>
+            <li><strong>Outsourcing of Services:</strong> Companies hire other companies from different countries to do tasks like customer service.</li>
+            <li><strong>Trade Related Intellectual Property Rights (TRIPs):</strong> Rules about patents and copyrights affect global trade and innovation.</li>
+        </ul>
+    `,
+            },
+            {
+              question: "<h6>Liberalization:</h6>",
+              answer: `
+        <p>In simple terms, liberalization means easing up on rules and regulations, typically in social or economic areas.</p>
+        <p><strong>Economic Liberalization:</strong><br>This specifically refers to relaxing restrictions in economic policies, often associated with the principles of neoliberalism. In the context of globalization, the current phase involves liberalizing economic policies, such as freeing up markets and reducing government control over the production of goods and services.</p>
+        <p><strong>Role of International Financial Institutions (IFIs):</strong><br>Organizations like the International Monetary Fund (IMF) and the World Bank have been pushing for the deregulation of national economies and liberalization in trade and investment sectors as conditions for providing financial aid or loans to countries worldwide. They believe that with economic forces transcending national boundaries, governments should have a limited role in economic activities, allowing market forces to operate freely.</p>
+        <p><strong>Free Trade:</strong><br>In modern terms, free trade means conducting business without restrictions such as import duties, export subsidies, domestic production subsidies, trade quotas, or import licenses. The main idea behind free trade is based on the economic principle of "comparative advantage," which suggests that each region should focus on producing what it can make most efficiently and affordably, and then exchange those products for items it cannot produce as efficiently.</p>
+        <p><strong>Features of India's Liberalization Policy:</strong></p>
+        <ul>
+            <li><strong>Reduced Role of the State in Economic Governance:</strong> The government has scaled back its involvement in regulating the economy.</li>
+            <li><strong>Transition to Private Sector Dominance:</strong> The state has withdrawn from certain economic sectors, allowing private companies to take over.</li>
+            <li><strong>Decrease in Public Sector Participation:</strong> There has been a decline in government-owned industries, particularly in key sectors like banking, insurance, and other public enterprises.</li>
+            <li><strong>Reduced State Provision of Social Services:</strong> The government's role in providing public services like education, housing, and healthcare has decreased.</li>
+            <li><strong>Increased Emphasis on Private Sector Participation:</strong> The government aims to promote development through greater involvement of the private sector, relying more on market mechanisms for the exchange of goods and services.</li>
+        </ul>
+    `,
+            },
+            {
+              question: "<h6>Privatization:</h6>",
+              answer: `
+        <p>Privatization involves transferring ownership of publicly owned assets to private individuals or entities gradually over time. This process can be implemented using various techniques, including:</p>
+        <ul>
+            <li><strong>Public Offering of Shares:</strong> Selling all or part of the shares of a publicly traded company to the general public through stock markets.</li>
+            <li><strong>Private Sale of Shares:</strong> Selling all or part of a state-owned enterprise directly to private individuals or groups.</li>
+            <li><strong>New Private Investment in State-Owned Enterprises:</strong> Encouraging private investment in state-owned enterprises through subsidized private share issues.</li>
+            <li><strong>Entry of Private Sector into Public Sector:</strong> Allowing private companies to operate in sectors traditionally reserved for the public sector, such as power and telecommunications.</li>
+            <li><strong>Contracting Out Services and Utilities:</strong> Hiring private operators or contractors to manage and maintain public services like water supply and sewage treatment while retaining government ownership.</li>
+            <li><strong>Sale of Government Assets:</strong> Selling government or state-owned enterprises' assets directly to private buyers instead of issuing shares.</li>
+            <li><strong>Reorganization or Fragmentation:</strong> Restructuring or dividing subsidiary units of a company to facilitate privatization.</li>
+            <li><strong>Management/Employee Buy-Out:</strong> Allowing management or employees to acquire controlling interests in the company, often with government assistance in the form of credit extensions.</li>
+        </ul>
+        <p>The Indian government in the 1990s took steps to privatize the economy, making it more business-friendly. These included:</p>
+        <ul>
+            <li><strong>Ending License Raj:</strong> Getting rid of the complex system of permits needed to start and run businesses, which had hindered growth.</li>
+            <li><strong>Less Regulation:</strong> Relaxing rules on various industries to encourage competition and investment.</li>
+            <li><strong>Removing MRTP and FERA:</strong> Doing away with laws that restricted trade and monopolies, and those regulating foreign exchange.</li>
+            <li><strong>Allowing 100% NRI Equity:</strong> Letting Non-Resident Indians own 100% of Indian companies, boosting foreign investment.</li>
+            <li><strong>Simplifying Approvals:</strong> Making it easier to get permits and clearances for business activities.</li>
+            <li><strong>Selling Government Shares in PSUs:</strong> Selling off government stakes in state-owned companies to private investors.</li>
+            <li><strong>Helping Struggling Industries:</strong> Referring struggling companies to BIFR for restructuring and improvement.</li>
+        </ul>
+    `,
+            },
+            {
+              question:
+                "<h6>Foreign Direct Investment (FDI) and Globalization of Financial Markets:</h6>",
+              answer: `
+        <p>FDI is when foreign investors put money into businesses in a country and in return, they get a share of ownership in those businesses. This is a big part of economic globalization and the freeing up of financial markets.</p>
+        <p>In India, FDI can happen in various ways:</p>
+        <ul>
+            <li><strong>Financial Collaboration:</strong> Foreign investors can team up with Indian companies to invest in projects together.</li>
+            <li><strong>Joint Ventures and Technical Collaboration:</strong> Foreign companies can partner with Indian companies to work on projects and share technology.</li>
+            <li><strong>Capital Market via Euro Issues:</strong> Indian companies can raise money from foreign investors by issuing shares in European markets.</li>
+            <li><strong>Private Placements or Preferential Allotment:</strong> Foreign investors can directly buy shares from Indian companies or be given shares through special allotments.</li>
+        </ul>
+        <p>FDI isn't just one-way. Indian companies also invest abroad through partnerships with foreign companies. India exports various products like agricultural and marine products, grains, oilseeds, tea, and coffee to other countries as part of this global trade.</p>
+    `,
+            },
+            {
+              question: "<h6>International Trade Regulatory Body – WTO</h6>",
+              answer: `
+        <p>The International Trade Organization (ITO) was planned to be like the IMF and World Bank, helping with global trade and financial stability. But it never happened. Instead, 23 countries kept talking about trade, leading to the creation of the General Agreement on Tariffs and Trade (GATT) in October 1947.</p>
+        <p>GATT played a big role after World War II by gradually lowering tariffs in both rich and poor countries. This happened because countries changed their own policies and also negotiated with each other under GATT.</p>
+        <p>During the eighth round of GATT talks, called the Uruguay Round, countries saw the need for better trade rules. So, they decided to make the World Trade Organization (WTO) to handle global trade negotiations.</p>
+    `,
+            },
+            {
+              question: "<h6>WTO</h6>",
+              answer: `
+        <p>The World Trade Organization (WTO), established on January 1st, 1995, replaced the General Agreement on Tariffs and Trade (GATT) and serves as an international organization governing global trade rules among nations.</p>
+        <p>While GATT was a bilateral agreement, the WTO operates as an organized entity, meaning decisions made by the organization apply to all member nations.</p>
+        <p>The primary goal of the WTO is to establish and enforce rules governing international trade. Its headquarters are located in Geneva.</p>
+        <p>The WTO ensures that international trade flows smoothly, predictably, and as freely as possible. As of 2005, it has 148 member countries, covering 97% of world trade, with more countries compelled to join over time. Decisions are made collectively by all WTO members, and agreements must be ratified by each member nation's parliament.</p>
+        <p>The WTO's highest decision-making body is the Ministerial Conference, which convenes at least once every two years.</p>
+        <p><strong>The WTO has several key functions:</strong></p>
+        <ul>
+            <li><strong>Administering trade agreements:</strong> It oversees the implementation and enforcement of trade agreements among member nations.</li>
+            <li><strong>Providing a platform for trade negotiations:</strong> The WTO facilitates negotiations among member countries to reach agreements on various trade issues.</li>
+            <li><strong>Resolving trade disputes:</strong> It mediates and resolves disputes between member countries related to trade agreements.</li>
+            <li><strong>Monitoring national trade policies:</strong> The WTO monitors the trade policies of member countries to ensure they comply with agreed-upon rules and regulations.</li>
+            <li><strong>Providing technical assistance and training for developing countries:</strong> It assists developing nations in building their capacity to participate effectively in international trade.</li>
+            <li><strong>Cooperating with other international organizations:</strong> The WTO collaborates with other international bodies to address global trade-related issues.</li>
+        </ul>
+        <p>WTO agreements cover various areas, including goods, services, intellectual property, dispute settlement, and policy review. Agreements on goods address issues such as reducing customs duties and trade barriers, regulating specific sectors like agriculture and textiles, and addressing issues like state trading, product standards, subsidies, and anti-dumping measures.</p>
+        <p>The WTO has rules that aim to restrict "trade-related investment measures" (TRIMs), which include various ways national governments might use to shape industry and investment policies to support their industries and companies.</p>
+        <p>Additionally, WTO rules regarding "trade-related intellectual property" (TRIPs) offer significant protection in areas like copyright and intellectual property rights, providing unprecedented safeguards.</p>
+    `,
+            },
+            {
+              question:
+                "<h6>Multinational and transational companies and their functioning</h6>",
+              answer: `
+        <p>As rules in economies and financial markets became less strict, there was a big increase in money moving between countries. At the same time, globalization brought in a new group of big international companies called multinational corporations (MNCs).</p>
+        <p>MNCs are like huge corporate giants because they are so big and powerful. Some of them make as much money in a year as several countries combined. They do business in many countries at once, which makes them really strong.</p>
+        <p>During the 1990s, globalization made MNCs even more active around the world. A multinational company is one that does business in many countries and has factories or offices outside its home country. This means they have a big influence on the global economy.</p>
+    `,
+            },
+            {
+              question:
+                "<h6>Advantages and Drawbacks of Multinational Corporations (MNCs)</h6>",
+              answer: `
+        <p>Multinational corporations (MNCs) come with both advantages and drawbacks:</p>
+        <p><strong>Benefits:</strong></p>
+        <ol>
+            <li><strong>Job Creation:</strong> MNCs often bring in advanced technology and processes, creating job opportunities in the host country.</li>
+            <li><strong>Technological Advancement:</strong> They introduce improved technological processes, raising labor and environmental standards.</li>
+            <li><strong>Revenue Generation:</strong> MNCs contribute to the host country's economy by paying taxes, thereby providing revenue for public services and infrastructure development.</li>
+        </ol>
+        <p><strong>Drawbacks:</strong></p>
+        <ol>
+            <li><strong>Influence on Government Policies:</strong> MNCs may exert pressure on host governments to tailor policies in their favor, potentially undermining local interests.</li>
+            <li><strong>Exploitative Labor Practices:</strong> Some MNCs may prioritize profit over fair labor conditions, leading to exploitation of vulnerable workers.</li>
+            <li><strong>Repatriation of Profits:</strong> MNCs may repatriate profits to their home countries instead of reinvesting in the host nation, limiting economic development.</li>
+            <li><strong>Impact on Small Businesses:</strong> MNCs' competitive advantage can drive smaller local businesses out of the market.</li>
+            <li><strong>Tax Evasion:</strong> Some MNCs engage in tax evasion practices, depriving the host country of potential tax revenue.</li>
+            <li><strong>Human Rights Violations and Environmental Damage:</strong> In pursuit of profit, MNCs may disregard human rights and environmental regulations, causing harm to communities and ecosystems.</li>
+        </ol>
+        <p>In summary, while MNCs bring economic benefits such as job creation and technological advancement, they also pose challenges related to governance, labor practices, economic inequality, and environmental sustainability.</p>
+    `,
+            },
+            {
+              question: "<h6>Infracture development</h6>",
+              answer: `
+        <p>Infrastructure development is crucial in today's era of globalization as it involves building better roads, ports, and power systems to support industries reliant on import and export. This is essential for countries to enhance their competitiveness in the global market. Take India, for instance. To compete internationally, India needed to upgrade its port facilities. In the mid-1990s, Indian ports could only handle 190 million tonnes of trade annually, much less than ports in places like Singapore. Additionally, container-handling rates were lower compared to international standards. This highlighted the need for significant investments in road construction, port development, and improvements in the power and telecommunications sectors to attract more foreign trade.</p>
+        <p>Recognizing this need, the Indian government estimated a total spending of $200 billion over the next decade for infrastructure development. To finance this, they sought funds from the private sector and overseas investors. To facilitate foreign investment, the government opened up sectors such as power, telecommunications, and transport to foreign direct investment. This strategic move aimed to bolster infrastructure development, making India more competitive in the global marketplace.</p>
+    `,
+            },
+            {
+              question:
+                "<h6>Expansion of information and communication technologies (ICTS) and birth of information age</h6>",
+              answer: `
+        <p>The rapid advancement of information technology is a standout feature of today's society. It's being applied across various electronic activities, bringing significant changes. In the past, we saw waves driven by physical labor, then machines and blue-collar workers, and now, information technology and knowledge workers lead the charge. Information and Communication Technology (ICT) has emerged as a dominant force globally, influencing all aspects of human life.</p>
+        <p>Improved communication has shrunk the world, making international telephone and fax communication almost instant and affordable. The Internet has become a global hub for communication and information sharing. Satellite, cable TV, and VHF radio offer a wide range of news and entertainment choices. The extensive expansion of information technology has led to a massive growth in outsourcing services worldwide.</p>
+        <p>In this third wave, the ability to handle, transmit, store, and retrieve information is crucial for prosperity and a qualitatively different lifestyle. The information age has revolutionized how we live and work, marking a significant shift in human civilization.</p>
+        <p>Peter Drucker, in 1988, described the "information society" as a society that follows capitalism. He said that in this new society, the traditional roles of capitalists and workers are replaced by knowledge workers and service workers. The main economic challenge in this society is how to make knowledge work more efficient and productive. Drucker emphasized the importance of understanding and using information effectively in this changing society.</p>
+    `,
+            },
+            {
+              question: "<h6>Outsourcing of services</h6>",
+              answer: `
+        <p>In an increasingly globalized world, information and communication technologies have become essential for businesses, leading to a significant expansion of information technology-enabled services (ITES) worldwide. This sector has become a major component of the IT industry, with Business Process Outsourcing (BPO) playing a crucial role within ITES.</p>
+        <p>Outsourcing is necessary across various sectors such as finance, healthcare, accounting, and human resources. It involves one company delegating part of its workload to another company, which then assumes responsibility for designing and implementing the business process according to strict guidelines provided by the outsourcing company.</p>
+        <p>BPO encompasses a range of activities and involves reengineering entire operations. This process benefits both the outsourcing company and the service provider by reducing costs, improving quality in non-core business areas, and maximizing expertise and competencies.</p>
+        <p>BPO services include customer service interaction, back-office operations like banking and accounting, transcription services such as medical transcription, content development, animation, data research, market surveys, consultancy, and management. These services cater to various industries and sectors, offering specialized solutions to meet specific business needs.</p>
+    `,
+            },
+            {
+              question:
+                "<h6>Trade related intellectual property rights (TRIPS)</h6>",
+              answer: `
+        <p>A patent, as defined by the United Nations, is a legal privilege bestowed by the government upon inventors and individuals associated with them, granting exclusive rights for a specified duration of time. These rights empower the patent holder to prevent others from manufacturing, utilizing, or selling the patented product, or from employing the patented method or process. This statutory protection serves to incentivize innovation by ensuring that inventors have the opportunity to benefit from their creations without fear of unauthorized use by competitors.</p>
+    `,
+            },
+            {
+              question: "<h6>Social dimention of Globalization</h6>",
+              answer: `
+        <p>The social dimension of globalization explores the effects of globalization on individuals, families, and communities. It encompasses aspects such as employment, working conditions, income levels, and social protection mechanisms. Additionally, it delves into cultural identity, inclusivity, and community cohesion. Essentially, it examines how globalization reshapes societal structures and dynamics, prompting discussions and concerns about various facets of human well-being and social interaction.</p>
+        <p>Moreover, it encompasses broader concerns such as security, cultural preservation, and the sense of community cohesion. These factors play a crucial role in shaping societal norms and values in an increasingly interconnected world.</p>
+        <p>Furthermore, the transition towards economic liberalization has led to significant shifts in the role of the government. With a noticeable decline in public spending, particularly evident in the decreasing trend observed from the 1980s to the 1990s, there are significant implications for citizens' access to essential services such as education, healthcare, and housing.</p>
+        <p>Additionally, as economic activities increasingly shift towards the private sector, there is a discernible transition towards market-driven decision-making processes.</p>
+    `,
+            },
+            {
+              question:
+                "<h6>Labour reforms and deteriorating labour welfare</h6>",
+              answer: `
+        <p>Labour reforms and the decline in labour welfare have been significant outcomes of the deregulation and privatization of state-owned enterprises, which are key parts of structural adjustment programmes mandated by International Financial Institutions (IFIs). These reforms are often attached as conditions to aid packages provided to developing countries and aim to speed up economic liberalization.</p>
+        <p>One major change is the deregulation of the labour market, which has seen both explicit and implicit alterations. Explicit deregulation involves the erosion or abandonment of formal regulations through legislative measures, while implicit deregulation occurs when existing regulations become less effective due to inadequate implementation or systematic circumvention.</p>
+        <p>The rationale behind such deregulation is the belief that excessive government intervention in the labour market, including policies related to public sector wages, minimum wage laws, and employment security regulations, hampers economic adjustment and growth. Therefore, policymakers advocate for the removal or relaxation of these regulations to foster a more flexible and adaptable labour market. However, these reforms often lead to declining labour welfare standards, raising concerns about job security, wage levels, and overall working conditions for workers.</p>
+        <p>Governments worldwide have increasingly felt pressured to relax labour standards, adjust tax regulations, and reduce oversight to attract more foreign direct investment (FDI). This trend has led to a gradual decline in labour standards. Large corporate entities like Transnational Corporations (TNCs) and Multinational Corporations (MNCs) have adopted a vendor system of subcontracting for their production needs. Under this system, companies outsource their work to laborers through contractors, who then deliver the finished output back to the company.</p>
+        <p>Unfortunately, this arrangement often results in job insecurity for the laborers and exacerbates the deterioration of labor welfare standards. Since there is no effective monitoring system in place to ensure the welfare of these workers, they may face exploitative working conditions, low wages, and lack of job security. This underscores the importance of maintaining robust labour standards and oversight mechanisms to safeguard the well-being of workers amidst the pursuit of foreign investment.</p>
+    `,
+            },
+            {
+              question: "<h6>Feminization of work</h6>",
+              answer: `
+        <p>The "feminization of work" refers to the increasing participation of women in the workforce, particularly in countries that have adopted liberal economic policies. This trend is closely linked to industrialization and globalization, where women play a significant role in driving economic activities, often in export-oriented industries.</p>
+        <p>Women's participation in the workforce, especially in the age group of 20-54, reached approximately 70% by 1996. They are particularly absorbed in industries geared towards exports, such as those found in export processing zones and special economic zones. These industries often require cheap labor and have relocated to developing countries.</p>
+        <p>Investors tend to prefer employing women in industries like apparel, shoe and toy manufacturing, data processing, and semiconductor assembling, which primarily involve unskilled to semi-skilled labor. Additionally, women are often employed in large numbers in the informal sector, which offers low-paying and precarious job opportunities, further exacerbated by globalization.</p>
+    `,
+            },
+            {
+              question: "<h6>Poverty</h6>",
+              answer: `
+        <p>The opening up of economies was primarily seen as a way for trade to drive growth, with the benefits trickling down to the poor. However, the outcomes have been mixed, with many countries experiencing widening economic inequalities, contrary to what traditional trade theories suggested.</p>
+        <p>The globalization of trade has led to significant changes in the labor market, including widening wage gaps, increased use of temporary contracts, and a shift towards skill-based segregation of work. Additionally, industrialization and the global trade in agriculture have worsened poverty in nations reliant on agriculture.</p>
+        <p>The adoption of non-sustainable industrial agriculture practices globally has negatively impacted farmers in developing and least developed countries. Factors such as currency devaluation, rising production costs, and falling commodity prices, all resulting from economic liberalization, have contributed to their declining incomes. These trends highlight the complexities and challenges associated with poverty alleviation in the era of globalization.</p>
+    `,
+            },
+            {
+              question: "<h6>Unsustainable Development Practices</h6>",
+              answer: `
+        <p>Sustainable development refers to a path of progress that fulfills the needs of the present generation without jeopardizing the ability of future generations to meet their own requirements. It goes beyond mere economic advancement to include environmental preservation and the fair distribution of wealth and resources, aiming to enhance living standards for all.</p>
+        <p>During the era of globalization characterized by intense market competition, development practices often veered towards unsustainability. This implies that the methods employed prioritized short-term gains over long-term ecological balance and societal well-being. Such unsustainable practices undermine the prospects of future generations by depleting natural resources, exacerbating environmental degradation, and perpetuating socio-economic inequalities.</p>
+        <h6>The Case of Plachimada Coca-Cola Company in Kerala, India</h6>
+        <p>In Kerala, India, the Coca-Cola company established a plant in Plachimada, aiming to produce vast quantities of beverages daily. This plant, like many others across India, extracted enormous amounts of groundwater, with each station drawing up to 1.5 million liters of water per day. Shockingly, it takes nine liters of clean water to produce just one liter of Coke, highlighting the staggering consumption.</p>
+        <p>However, the extraction of groundwater had severe consequences, depriving local communities of their access to clean water, which is a basic human right. Moreover, the factories discharged toxic waste, posing threats to both public health and the environment. Concerns about the safety of the products themselves were raised, prompting the Indian Parliament to investigate pesticide residues found in soft drinks.</p>
+        <p>Despite the conditional license granted by the local authorities, the Coca-Cola company exceeded its permitted usage of motorized pumps. It drilled numerous wells and installed high-powered electric pumps illegally, further depleting the groundwater levels. As a result, the water table dropped significantly, from 45 to 150 meters below the surface, exacerbating the environmental impact of the company's operations.</p>
+        <p>Coca-Cola's actions in Plachimada, Kerala, were devastating for the local community and the environment. Not only did the company deplete the already scarce water resources, but it also polluted the remaining water sources. Initially, Coca-Cola dumped its waste outside its premises, which spread into nearby fields, canals, and wells during the rainy season, posing serious health risks.</p>
+        <p>To dispose of its waste, Coca-Cola started pumping dirty water into dry boreholes on-site, contaminating the aquifers. As a result, the local tribal women had to travel long distances to access clean water. In protest, they organized a sit-in demonstration outside the factory gates. Coca-Cola's activities led to the depletion of 260 wells, affecting both drinking water and irrigation in the region known as the rice bowl of Kerala.</p>
+        <p>Adding to the misery, Coca-Cola distributed toxic waste from its factory to villagers as free fertilizer, containing harmful substances like cadmium and lead, known to cause cancer. In 2003, the district medical officer declared the water in Plachimada unfit for consumption due to pollution. The tribal women's protest gained national and international attention, leading to widespread solidarity.</p>
+        <p>Finally, in February 2004, the Kerala Government took action and ordered the closure of the Coca-Cola plant in Plachimada. This incident highlights the grave consequences of unchecked corporate exploitation and the importance of community resistance in protecting natural resources and public health.</p>
+    `,
+            },
+
+            // Add more question-answer pairs as needed
+          ],
+        },
+      ];
+
+      function generateSectionsAndQuestions() {
+        var questionContainer = $("#questionContainer");
+        sections.forEach(function (section, sectionIndex) {
+          var sectionHTML = `<p><strong>${section.name}</p></strong>`;
+          section.questionsAndAnswers.forEach(function (item, questionIndex) {
+            var questionID = "question" + sectionIndex + "-" + questionIndex;
+            var answerID = "answer" + sectionIndex + "-" + questionIndex;
+            var card = `
+          <div class="card">
+            <div class="card-header" id="${questionID}">
+              <h5 class="mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#${answerID}" aria-expanded="false" aria-controls="${answerID}">
+                  ${item.question}
+                  <i class="fas fa-chevron-down float-right"></i>
+                </button>
+              </h5>
+            </div>
+            <div id="${answerID}" class="collapse" aria-labelledby="${questionID}" data-parent="#questionContainer">
+              <div class="card-body">
+                ${item.answer}
+              </div>
+            </div>
+          </div>`;
+            sectionHTML += card;
+          });
+          questionContainer.append(sectionHTML);
+        });
+      }
+
+      $(document).ready(function () {
+        generateSectionsAndQuestions();
+
+        // Collapse other cards when one is shown
+        $(".collapse").on("show.bs.collapse", function () {
+          $(".collapse.show").not(this).collapse("hide");
+        });
+
+        // Dark mode toggle
+        $("#darkModeToggle").click(function () {
+          var darkModeState = $("body").hasClass("dark-mode");
+          $("body").toggleClass("dark-mode");
+          $("header").toggleClass("dark-mode");
+          $("footer").toggleClass("dark-mode");
+          $(".card").toggleClass("dark-mode");
+          $(".dropdown-toggle").toggleClass("dark-mode"); // Apply dark mode to dropdown toggle button
+          $(".dropdown-menu").toggleClass("dark-mode"); // Apply dark mode to dropdown menu
+          if (!darkModeState) {
+            $(this)
+              .addClass("on")
+              .text("Light Mode")
+              .html('<i class="fas fa-sun"></i> Light Mode');
+            localStorage.setItem("darkMode", "on"); // Store dark mode state in local storage
+          } else {
+            $(this)
+              .removeClass("on")
+              .text("Dark Mode")
+              .html('<i class="fas fa-moon"></i> Dark Mode');
+            localStorage.setItem("darkMode", "off"); // Store dark mode state in local storage
+          }
+        });
+
+        // Retrieve dark mode state from local storage
+        var darkModeState = localStorage.getItem("darkMode");
+        if (darkModeState === "on") {
+          $(
+            "body, header, footer, .card, .dropdown-toggle, .dropdown-menu"
+          ).addClass("dark-mode");
+          $("#darkModeToggle")
+            .addClass("on")
+            .text("Light Mode")
+            .html('<i class="fas fa-sun"></i> Light Mode');
+        }
+      });
+    </script>
+  </body>
+</html>
