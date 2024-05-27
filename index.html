@@ -22,7 +22,7 @@
         object-fit: cover;
       }
       .bordered-heading {
-        border: 2px solid rgb(52, 58, 64); /* Adjust as needed rgb(56, 161, 30) */
+        border: 2px solid rgb(52, 58, 64); /* Adjust as needed */
         padding: 10px;
         display: inline-block;
         margin: 0 20px; /* Added margin for both left and right sides */
@@ -30,8 +30,11 @@
       .card {
         border: 2px solid rgb(52, 58, 64); /* Same border as the heading */
         margin: 0 20px; /* Added margin for both left and right sides */
+        display: flex;
+        flex-direction: column;
       }
       .card-body {
+        flex: 1;
         text-align: center;
       }
       .card img {
@@ -71,7 +74,7 @@
 
         <!-- Subject cards -->
         <div class="row justify-content-center my-5">
-          <div class="col-md-4 mb-4">
+          <div class="col-md-4 mb-4 d-flex">
             <div class="card h-100">
               <img
                 src="https://img.freepik.com/premium-vector/globalization-icon-3d-illustration-from-digitalization-collection-creative-globalization-3d-icon-web-design-templates-infographics-more_676904-2677.jpg"
@@ -85,7 +88,7 @@
               </div>
             </div>
           </div>
-          <div class="col-md-4 mb-4">
+          <div class="col-md-4 mb-4 d-flex">
             <div class="card h-100">
               <img
                 src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/f38d802002043.5601163816f9e.jpg"
